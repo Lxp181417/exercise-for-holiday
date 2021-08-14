@@ -1,54 +1,55 @@
 # exercise-for-holiday
 注意：相关功能（一些很具体的要求）没有全部实现，并且有一些BUG，但是满足了基本要求
-通过ArrayList实现购物管理系统管理员和客户的相关功能：
-管理员：
-(1)登录
-管理员账户可以预先设定一个admin，密码为ynuinfo#777。
-(2)密码管理
-(2.1)修改自身密码
-修改管理员的密码。
-(2.2)重置指定客户/用户的密码
-管理员可以重置普通用户的密码，但不能查看普通用户的密码。
-(3)客户管理
-(3.1)列出所有客户信息：
-客户信息包括：客户ID、用户名、用户级别（金牌客户、银牌客户、铜牌客户）、用户注册时间、客户累计消费总金额、用户手机号、用户邮箱；
-(3.2)删除客户信息：
-删除客户信息之前要给出警告提示，请用户确认是否继续删除操作。
-(3.3)查询客户信息
-可以根据客户ID或者客户的用户名进行查询，也可以一次查询所有客户的信息。
- (4)商品管理
-(4.1)列出所有商品的信息
-商品的信息包括：商品编号、商品名称、生产厂家、生产日期、型号、进货价、零售价格、数量。
-(4.2)添加商品的信息
-商品的信息包括：商品编号、商品名称、生产厂家、生产日期、型号、进货价、零售价格、数量。
-(4.3)修改商品的信息
-可以对上述的商品信息进行修改。
-(4.4)删除商品的信息
-可以删除商品，删除之前必须给出警告提示：删除后无法恢复，请用户确认是否继续删除操作。
-(4.5)查询商品的信息
-可以根据商品名称、生产厂家、零售价格进行单独查询或者组合查询（例如：查询联想公司、1000以上的商品清单）。
-(5)退出登录
-退出管理员登录。
+//Note: The functionality (some very specific requirements) is not fully implemented and there are a few bugs, but the basic requirements are met.
 
-     客户的功能及需求说明如下:
-(1)注册：
-用户名长度不少于5个字符；密码长度大于8个字符，必须是大小写字母、数字和标点符号的组合。
-(2)	登录：密码连续输入错误5次就锁定账户。
-(3)密码管理
-(3.1)修改自身密码
-密码长度大于8个字符，必须是大小写字母、数字和标点符号的组合。
-(3.2)忘记密码：可以让自行重置密码
-模拟重置密码功能，当用户选择忘记密码功能的时候，让用户输入用户名和注册所使用的邮箱地址，系统会将一个随机生成的密码发到指定的邮箱。并提示用户可以使用这个密码登录。
-(4)购物
-(4.1)将商品加入购物车
-用户可以输入商品编号和数量将指定的商品加入到购物车里。
-(4.2)将商品从购物车中移除
-可以将商品从购物车中移除，移除之前必须给出警告提示：请用户确认是否继续移除操作。移除操作不影响商品的数量。
-(4.3)修改购物车中的商品
-修改商品数量，当数量小于或等于0，则将该商品从购物车中清除。
-(4.4)结账（模拟的支付渠道：支付宝、微信、银行卡）
-模拟支付操作，不调用实际的支付宝、微信、银行卡。只是表明进行了相关的操作，操作成功以后，系统中相应的商品数量要进行修改。
-(4.5)查看购物历史
-查看用户的购物历史：时间、购买的商品清单。
-(5)退出登录
-退出登录。
+      The administrator functions and requirements are described as follows:
+(1) to log in
+The administrator account can be set as admin and the password is ynuinfo#777.
+(2) Password management
+(2.1) Change your password
+Example Change the password of the administrator.
+(2.2) Resets the password of a specified customer/user
+The administrator can reset the password of a common user but cannot view the password of a common user.
+(3) Customer management
+(3.1) List all customer information:
+Customer information includes: customer ID, user name, user level (gold customer, silver customer, bronze customer), user registration time, customer's total accumulative consumption amount, user's mobile phone number, user's email address;
+(3.2) Deleting customer Information:
+Before deleting customer information, prompt users to confirm whether to continue deleting customer information.
+(3.3) Querying customer information
+You can query information by customer ID or user name, or query information about all customers at a time.
+(4) Commodity management
+(4.1) List the information of all commodities
+Commodity information includes: commodity number, commodity name, manufacturer, date of production, model, purchase price, retail price and quantity.
+(4.2) Add commodity information
+Commodity information includes: commodity number, commodity name, manufacturer, date of production, model, purchase price, retail price and quantity.
+(4.3) Modify commodity information
+The above commodity information can be modified.
+(4.4) Delete commodity information
+Products can be deleted. Before deletion, a warning message must be given: the deletion cannot be restored. Please confirm whether to continue the deletion operation.
+(4.5) Query commodity information
+Can be based on the name of the commodity, manufacturer, retail price for individual query or combination query (for example: query Lenovo, more than 1000 commodity list).
+(5) Log out
+Log out as an administrator.
+
+     Customer's functions and requirements are described as follows:
+(1) registration:
+The user name must contain at least 5 characters. The password contains at least eight characters and must be a combination of uppercase and lowercase letters, digits, and punctuation marks.
+(2) Login: The account will be locked if you enter the wrong password for five consecutive times.
+(3) Password management
+(3.1) Change your password
+The password contains at least eight characters and must be a combination of uppercase and lowercase letters, digits, and punctuation marks.
+(3.2) Forget password: you can reset the password by yourself
+Simulate the reset password function, when the user chooses to forget the password function, let the user input the user name and register the email address used, the system will send a randomly generated password to the specified mailbox. The user is prompted to log in with this password.
+(4) shopping
+(4.1) Add goods to the shopping cart
+The user can enter the item number and quantity to add the specified item to the shopping cart.
+(4.2) Remove the item from the cart
+Items can be removed from the shopping cart, before removing, a warning must be given: please confirm whether to continue to remove the operation. The removal does not affect the number of items.
+(4.3) Modify the items in the shopping cart
+Modifies the quantity of an item so that when the quantity is less than or equal to zero, the item is removed from the cart.
+(4.4) Checkout (simulated payment channels: Alipay, wechat and bank cards)
+Simulate payment operation, do not call the actual Alipay, wechat, bank card. It just shows that the relevant operation has been carried out, and after the success of the operation, the corresponding quantity of goods in the system should be modified.
+(4.5) Viewing the Shopping History
+View the user's shopping history: time, list of items purchased.
+(5) Log out
+Log out.
