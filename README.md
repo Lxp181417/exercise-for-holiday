@@ -1,4 +1,4 @@
-# exercise-for-holiday
+# shoppingManage
 注意：相关功能（一些很具体的要求）没有全部实现，并且有一些BUG，但是满足了基本要求
 //Note: The functionality (some very specific requirements) is not fully implemented and there are a few bugs, but the basic requirements are met.
 
